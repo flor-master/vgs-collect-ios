@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 extension MaskedTextField {    
     override open func textRect(forBounds bounds: CGRect) -> CGRect {

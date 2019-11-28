@@ -17,6 +17,6 @@ let package = Package(
             name: "VGSFramework",
             dependencies: ["Alamofire"],
             path: "framework"
-        )
+            ),
     ]
 )
