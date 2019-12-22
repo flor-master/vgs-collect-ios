@@ -15,7 +15,7 @@ public class VGSTextField: UIView {
     internal var focusStatus: Bool = false {
         didSet {
             if focusStatus {
-                updateUI?()
+                updateView?()
             }
         }
     }
@@ -25,7 +25,7 @@ public class VGSTextField: UIView {
     internal var fieldName: String!
     internal var token: String?
     
-    var updateUI: (() -> Void)?
+    var updateView: (() -> Void)?
     
     // just for internal using
     internal var text: String? {
@@ -81,7 +81,7 @@ public class VGSTextField: UIView {
                 vgs.registerTextFields(textField: [self])
             }
             
-            updateUI?()
+            updateView?()
         }
     }
     
